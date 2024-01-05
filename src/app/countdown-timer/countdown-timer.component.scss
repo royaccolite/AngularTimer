@@ -1,0 +1,94 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffd54f;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-size: 200 px;
+}
+
+li {
+  display: inline-block;
+  font-size: 4em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: calc(1.125rem * var(--smaller));
+}
+
+li span {
+  display: block;
+  font-size: 8rem;
+  font-size: calc(3.375rem * var(--smaller));
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+#buttons button {
+  background-color: #483001;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  
+}
+
+#countdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 25px;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}

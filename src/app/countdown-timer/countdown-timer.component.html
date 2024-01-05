@@ -1,0 +1,31 @@
+<body>
+<div class="container">
+  <h1 id="headline">Submission in:</h1>
+  <div id="countdown">
+    <ul>
+      <li>
+        <span id="minutes">{{ minutes }}</span
+        >Minutes
+      </li>
+      <li>
+        <span id="seconds">{{ seconds }}</span
+        >Seconds
+      </li>
+    </ul>
+  </div>
+  
+  <div #countdown>
+    <div id="buttons">
+      <button id="startButton" (click)="startTimer()">Start</button>
+      <button id="resetButton" (click)="resetTimer()">Reset</button>
+      <button id="pauseButton" (click)="pauseTimer()">Pause</button>
+      <button id="resumeButton" (click)="resumeTimer()">Resume</button>
+    </div>
+  </div>
+  <div id="content" class="emoji">
+    <span>🥳</span>
+    <span>🎉</span>
+    <span>🎂</span>
+  </div>
+</div>
+</body>
